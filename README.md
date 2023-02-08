@@ -15,7 +15,7 @@ sudo apt install git
 to do so.
 ### Run the script and commands
 ```sh
-git clone https://github.com/DamionGans/ubuntu-wsl2-systemd-script.git
+git clone https://github.com/victor1cea/ubuntu-wsl2-systemd-script.git
 cd ubuntu-wsl2-systemd-script/
 bash ubuntu-wsl2-systemd-script.sh
 # Enter your password and wait until the script has finished
