@@ -20,11 +20,24 @@ cd ubuntu-wsl2-systemd-script/
 bash ubuntu-wsl2-systemd-script.sh
 # Enter your password and wait until the script has finished
 ```
-### Then restart the Ubuntu shell and try running systemctl
+### Then shutdown WSL:
+```
+# Run this in Powershell
+wsl --shutdown
+```
+and try running systemctl in Ubuntu:
 ```sh
 systemctl
 
 ```
 If you don't get an error and see a list of units, the script worked.
+
+If you have problems with snap for some reasons:
+
+```
+sudo apt purge snapd
+sudo apt install snapd
+sudo snap install --edge core
+# test with: sudo snap install krita
 
 Have fun using systemd on your Ubuntu WSL2 image. You may use and change and distribute this script in whatever way you'd like. 
